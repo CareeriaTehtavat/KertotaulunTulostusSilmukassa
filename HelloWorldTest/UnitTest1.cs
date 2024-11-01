@@ -34,7 +34,7 @@ namespace HelloWorldTest
             int number = int.Parse(inputNumber);
             var expectedOutput = new List<string>
     {
-        $"Kertitaulu luvulle {number}:",
+        $"Kertotaulu luvulle {number}:",
         $"{number} * 1  = {number * 1}",
         $"{number} * 2  = {number * 2}",
         $"{number} * 3  = {number * 3}",
