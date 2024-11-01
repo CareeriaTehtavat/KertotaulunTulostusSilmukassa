@@ -15,7 +15,7 @@
 ```
 Anna luku: 4
 
-Kertitaulu luvulle 4:
+Kertotaulu luvulle 4:
 4 * 1 = 4
 4 * 2 = 8
 4 * 3 = 12
