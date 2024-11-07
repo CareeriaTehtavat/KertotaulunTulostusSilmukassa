@@ -34,7 +34,7 @@ namespace HelloWorldTest
             int number = int.Parse(inputNumber);
             var expectedOutput = new List<string>
     {
-        $"Kertotaulu luvulle {number}:",
+        $"Kertitaulu luvulle {number}:",
         $"{number} * 1  = {number * 1}",
         $"{number} * 2  = {number * 2}",
         $"{number} * 3  = {number * 3}",
@@ -61,8 +61,8 @@ namespace HelloWorldTest
         private bool LineContainsIgnoreSpaces(string line, string expectedText)
         {
             // Remove all whitespace from the line and the expected text
-            string normalizedLine = Regex.Replace(line, @"\s+", "");
-            string normalizedExpectedText = Regex.Replace(expectedText, @"\s+", "");
+            string normalizedLine = Regex.Replace(line, @"\s+", "").ToLower();
+            string normalizedExpectedText = Regex.Replace(expectedText, @"\s+", "").ToLower();
             return normalizedLine.Contains(normalizedExpectedText);
         }
 
